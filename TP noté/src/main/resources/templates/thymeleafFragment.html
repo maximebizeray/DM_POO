@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+ 
+<head>
+    <meta charset="UTF-8" />
+    <title>My Template</title>
+     
+</head>
+ 
+<body>
+     
+    
+    <ul th:fragment="my-fragment">
+		<li><a th:href="@{/Articles}">Article</a></li>
+		<li><a th:href="@{/Adresse}">Formulaire</a></li>
+		<li><a th:href="@{/greeting}">greeting</a></li>
+	</ul>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<! DOCTYPE HTML>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+	<title>Meteo</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+</head>
+
+<body>
+
+<h1>Meteo</h1>
+
+<ul th:each ="adresse: ${adresse}">
+	<li th:text ="${adresse}" />
+
+</ul>
+<ul th:each ="ville: ${ville}">
+	<li th:text ="${ville}" />
+
+</ul>
+
+
+<ul th:each ="meteo: ${meteo}">
+	<li th:text ="${meteo.currently.summary}" />
+	<li th:text ="${meteo.currently.temperature}" />
+</ul>
+
+
+ <div th:insert="thymeleafFragment :: my-fragment" />
+
+</body>
+</html>

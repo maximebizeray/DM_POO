@@ -1,0 +1,21 @@
+<! DOCTYPE HTML>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+	<title>Formulaire</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+</head>
+
+<body>
+
+<h1>Formulaire d'adresse</h1>
+
+<form method="post" action="/meteo">
+	<label for="adresse">Entrez l'adresse : </label>
+	<input type="text" name="adresse" id="adresse" required>
+	<input type="submit" value="Valider">
+</form>
+
+ <div th:insert="thymeleafFragment :: my-fragment" />
+
+</body>
+</html>

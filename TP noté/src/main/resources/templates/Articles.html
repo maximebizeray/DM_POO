@@ -1,0 +1,21 @@
+<! DOCTYPE HTML>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+	<title>Articles</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+</head>
+
+<body>
+
+<h1> Les différents Articles</h1>
+
+<ul th:each="Article: ${allArticles}">
+	<li th:text="${Article.content}" />
+	<p th:text="'Auteur : '+${Article.Auteur}"/>
+</ul>
+
+
+ <div th:insert="thymeleafFragment :: my-fragment" />
+
+</body>
+</html>
